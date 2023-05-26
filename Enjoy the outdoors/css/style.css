@@ -1,0 +1,102 @@
+
+/* home page design */
+#homePage {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#homePage h1{
+    font-size: 45px;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+
+#homePageContent{
+    padding: 30px;
+    background: rgba(206, 204, 204, 0.6);
+}
+
+form {
+    text-align: center;
+}
+
+/* navbar design */
+.navbar a{
+    text-decoration: none;
+    padding: 20px;
+    color:black;
+    float:right;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav{
+    /* background-color: rgb(112, 173, 209); */
+    opacity: 1;
+}
+
+
+/* idk where this leads to lol */
+/* .headerFont{
+    text-align: center;
+    position: relative;
+    top: -9em;
+    font-size: 2em;
+    color:#413e3e;
+} */
+
+/* mountain page header design */
+.mHeaderPic img{
+    width: 100%;
+    height:auto;
+    position: absolute;
+}
+
+.mHeaderPic img:hover{
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #ccc;
+}
+
+.mHeaderPic p{
+    position:relative;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(39, 39, 39);
+    padding: 5%;
+    padding-bottom: 11%;
+    /* opacity:0.2; */
+}
+
+#mainContent{
+    text-align:center;
+}
+
+#displaySelectedMountain{
+    padding: 10em;
+    margin: 4em;
+    background-color:rgba(84, 103, 127, 0.6);
+}
+
+/* 
+#intro{
+    text-align: center;
+    padding: 30px;
+} */
+
+.searchDiv{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#contentList{
+    height:500px;
+    text-align: center;
+    padding: 10px;
+}
