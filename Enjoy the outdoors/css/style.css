@@ -42,31 +42,14 @@ nav a:hover{
 }
 
 nav{
-    /* background-color: rgb(112, 173, 209); */
     opacity: 1;
 }
-
-
-/* idk where this leads to lol */
-/* .headerFont{
-    text-align: center;
-    position: relative;
-    top: -9em;
-    font-size: 2em;
-    color:#413e3e;
-} */
 
 /* mountain page header design */
 .mHeaderPic img{
     width: 100%;
     height:auto;
     position: absolute;
-}
-
-.mHeaderPic img:hover{
-    -moz-box-shadow: 0 0 50px #ccc;
-    -webkit-box-shadow: 0 0 50px #ccc;
-    box-shadow: 0 0 50px #ccc;
 }
 
 .mHeaderPic p{
@@ -89,12 +72,6 @@ nav{
     background-color:rgba(84, 103, 127, 0.2);
 }
 
-/* 
-#intro{
-    text-align: center;
-    padding: 30px;
-} */
-
 .searchDiv{
     text-align: center;
     padding-top: 10px;
@@ -112,4 +89,12 @@ nav{
 
 #contentList button:hover{
     font-weight: bold;
+}
+
+select{
+    width: 250px;
+}
+
+button{
+    border-radius: 12px;
 }
