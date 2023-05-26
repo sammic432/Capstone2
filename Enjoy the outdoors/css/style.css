@@ -18,6 +18,11 @@
 #homePageContent{
     padding: 30px;
     background: rgba(206, 204, 204, 0.6);
+    text-align:center;
+}
+
+#homePageContent a{
+    text-decoration: none;
 }
 
 form {
@@ -79,9 +84,9 @@ nav{
 }
 
 #displaySelectedMountain{
-    padding: 10em;
+    padding: 4em 10em 10em 10em;
     margin: 4em;
-    background-color:rgba(84, 103, 127, 0.6);
+    background-color:rgba(84, 103, 127, 0.2);
 }
 
 /* 
@@ -99,4 +104,12 @@ nav{
     height:500px;
     text-align: center;
     padding: 10px;
+}
+
+#contentList button{
+    border: none;
+}
+
+#contentList button:hover{
+    font-weight: bold;
 }

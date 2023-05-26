@@ -29,21 +29,28 @@
     </header>
     <main>
         <div id="mainContent">
-            <section id="mountainSearch">
-                <h3>Search Mountains</h3>
-                <select id="mountainDropdown"></select>
-                <button type="button" id="mountBtn">Search</button>
-            </section>
+            
 
             <section id="displaySelectedMountain">
                 <div class="container">
                     <div class="row">
+                        <section id="mountainSearch">
+                        <select id="mountainDropdown"><option value="">Select Mountain</option></select>
+                        <button type="button" id="mountBtn">Search</button>
+                        </section>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
                         <div class="col-6">
-                            <img id="mountainImg">
+                            <img id="mountainImg" height = 350px>
                         </div>
                         <div class="col-6">
                             <h2 id="mountain"></h2>
                             <div id="mountainInfo"></div>
+                            <div id="mountainElevation"></div>
+                            <div id="mountainEffort"></div>
+                            <div id="mountainCoord"></div>
                         </div>
                     </div>
                 </div>

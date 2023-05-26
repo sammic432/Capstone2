@@ -65,7 +65,7 @@ function displayLocaSearch(array){
     contentList.innerHTML = "";
     for(let i = 0; i < array.length; i++){
         if(statesInput.value === array[i].State){
-            contentList.innerHTML += `<button type="button" id="showPark" onclick="displaySelectedPark(${array[i].LocationName})">${array[i].LocationName}</button>`
+            contentList.innerHTML += `<button type="button" id="showPark" onclick="displaySelectedPark('${array[i].LocationName}')">${array[i].LocationName}</button>`
         }
     }
 }
@@ -74,7 +74,7 @@ function displayParkSearch(array){
     contentList.innerHTML = "";
     for(let i = 0; i < array.length; i++){
         if(array[i].LocationName.includes(parkTypeInput.value)){
-            contentList.innerHTML += `<button type="button" id="showPark" onclick="displaySelectedPark(${array[i].LocationName})">${array[i].LocationName}</button>`
+            contentList.innerHTML += `<button type="button" id="showPark" onclick="displaySelectedPark('${array[i].LocationName}')">${array[i].LocationName}</button>`
         }
     }
 }
@@ -100,15 +100,16 @@ function displaySelectedPark(park){
     parkPhone.innerHTML = "";
     parkLong.innerHTML = "";
     parkLati.innerHTML = "";
+
     for(let i = 0; i < nationalParksArray.length; i++){
         if(park == nationalParksArray[i].LocationName){
-            parkLocaID.innerHTML = `${array[i].LocationID}`;
-            parkName.innerHTML = `${array[i].LocationName}`;
-            parkAddress1.innerHTML = `${array[i].Address}`;
-            parkAddress2.innerHTML = `${array[i].City}, ${array[i].State} ${array[i].ZipCode}`;
-            parkPhone.innerHTML = `${array[i].Phone}`;
-            parkLong.innerHTML = `${array[i].Longitude}`;
-            parkLati.innerHTML = `${array[i].Latitude}`;
+            parkLocaID.innerHTML = `ID: ${nationalParksArray[i].LocationID}`;
+            parkName.innerHTML = `Name: ${nationalParksArray[i].LocationName}`;
+            parkAddress1.innerHTML = `Address: ${nationalParksArray[i].Address}`;
+            parkAddress2.innerHTML = `City: ${nationalParksArray[i].City}, ${nationalParksArray[i].State} ${nationalParksArray[i].ZipCode}`;
+            parkPhone.innerHTML = `Phone: ${nationalParksArray[i].Phone}`;
+            parkLong.innerHTML = `Longitude: ${nationalParksArray[i].Longitude}`;
+            parkLati.innerHTML = `Latitude: ${nationalParksArray[i].Latitude}`;
         }
     }
 }
